@@ -34,7 +34,7 @@ app.engine(
   })
 );
 app.set("view engine", "hbs");
-
+app.set("views", __dirname + "/views");
 // Route "/" that displays the index.hbs view with passed argument title:Express
 app.get("/", function (req, res) {
   res.render("index", { title: "Express" });
