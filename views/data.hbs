@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="/stylesheets/dataStyle.css" />
+  </head>
+  <body>
+    <h2>All Movies</h2>
+    <table>
+      <tr>
+        <th>Movie ID</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rated</th>
+        <th>Genre</th>
+        <th>Director</th>
+        <th>Plot</th>
+        <th>Awards</th>
+        <th>IMDb Rating</th>
+        <th>Poster</th>
+      </tr>
+      {{#each movies}}
+        <tr>
+          <td>{{this.Movie_ID}}</td>
+          <td>{{this.Title}}</td>
+          <td>{{this.Year}}</td>
+          <td>{{this.Rated}}</td>
+          <td>{{this.Genre}}</td>
+          <td>{{this.Director}}</td>
+          <td>{{this.Plot}}</td>
+          <td>{{this.Awards}}</td>
+          <td>{{this.imdbRating}}</td>
+          <td><img
+              src="{{this.Poster}}"
+              alt="{{this.Title}} Poster"
+              style="width:100px;"
+            /></td>
+        </tr>
+      {{/each}}
+    </table>
+  </body>
+</html>

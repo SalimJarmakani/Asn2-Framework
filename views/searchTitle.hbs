@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Movie</title>
+    <link rel="stylesheet" href="/stylesheets/searchTitle.css" />
+  </head>
+  <body>
+    <h1>Search Movie by Title</h1>
+    <form action="/data/search/title" method="POST">
+      <label for="title">Enter Movie Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="Enter Movie Title"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    {{#if movieResults.length}}
+      <h2>Search Results</h2>
+      {{#each movieResults}}
+        <div class="movie-card">
+          <h3>{{this.Title}} ({{this.Year}})</h3>
+          <img src="{{this.Poster}}" alt="Movie Poster" class="poster" />
+          <p><strong>Director:</strong> {{this.Director}}</p>
+          <p><strong>Genre:</strong> {{this.Genre}}</p>
+          <p><strong>Runtime:</strong> {{this.Runtime}}</p>
+          <p><strong>Plot:</strong> {{this.Plot}}</p>
+          <p><strong>IMDb Rating:</strong> {{this.imdbRating}}</p>
+        </div>
+      {{/each}}
+    {{/if}}
+  </body>
+</html>

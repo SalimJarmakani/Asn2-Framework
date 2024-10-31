@@ -1,0 +1,116 @@
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+h2 {
+  color: #555;
+  margin-top: 30px;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.movie-card h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.movie-card .poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.movie-details .poster {
+  max-width: 150px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movie-details th,
+.movie-details td {
+  padding: 8px;
+  text-align: left;
+}
+
+.movie-details th {
+  width: 120px;
+  color: #333;
+  font-weight: bold;
+}
+
+.movie-details td {
+  color: #555;
+}
