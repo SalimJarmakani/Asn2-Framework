@@ -11,7 +11,7 @@ const port = process.env.port || 3000;
 Allow static files in "public" directory to be served 
 (use __dirname to ensure absolute path is used for different environments)
 */
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // Set Handlebars as the template engine
 app.engine(
@@ -52,7 +52,7 @@ app.listen(port, () => {
 
 //Assignment 1 code ----------------------------------------------------------------------------------
 //reusable path
-var movieDataPath = path.join(__dirname, "movie-dataset-a2.json");
+var movieDataPath = path.join(__dirname, "/movie-dataset-a2.json");
 
 var movieList = [];
 app.use(express.urlencoded({ extended: true }));
